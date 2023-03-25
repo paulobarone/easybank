@@ -6,7 +6,7 @@ export const H1 = styled.h1`
   font-weight: 500;
 
   &.latestArticlesTitle {
-    margin-bottom: 32px;
+    margin-bottom: 48px;
   }
 `
 

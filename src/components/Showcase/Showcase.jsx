@@ -1,14 +1,15 @@
-import { Bg, Img } from './Showcase.style';
 import ShowcaseImg from './image-mockups.png';
+import { Bg, Img, ImgContainer } from './Showcase.style';
 import { H1, Paragraph, TextGroup } from '../../styles/Typography.style';
 import { Button, Container } from '../../styles/Components.style';
 
 function Showcase() {
   return (
     <>
-      <Bg>
-        <Img src={ShowcaseImg} alt="Smartphones with Easybank App" />
-      </Bg>
+      <Bg />
+      <ImgContainer>
+        <Img src={ShowcaseImg} alt="Showcase Image" />
+      </ImgContainer>
       <Container className='showcase'>
         <TextGroup>
           <H1>Next generation digital banking</H1>

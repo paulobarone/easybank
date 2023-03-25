@@ -31,7 +31,6 @@ function Footer() {
       name: `Instagram`
     }
   ]
-
   const linkItems = ['About Us', 'Contact', 'Blog', 'Careers', 'Support', 'Privacy Policy'];
 
   return (

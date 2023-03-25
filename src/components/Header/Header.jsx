@@ -1,8 +1,9 @@
-import logo from './logo.svg';
-import { NavContainer, Nav, Ul, Li} from './Header.style';
+import { NavContainer, Nav, Ul } from './Header.style';
 import hamburguer from './icon-hamburger.svg';
 import close from './icon-close.svg';
 import { useEffect, useState } from 'react';
+import Logo from '../Logo/Logo';
+import { Li } from '../../styles/Components.style';
 
 export default function Header() {
   const navBarItems = ['Home', 'About', 'Contact', 'Blog', 'Careers'];
@@ -20,7 +21,7 @@ export default function Header() {
   return (
     <NavContainer>
       <Nav>
-        <img src={logo} alt="Easybank Logo" />
+        <Logo white={false} />
         <div className='containerHamburguer'>
           <img src={menuActive ? close : hamburguer} alt="Menu" onClick={toggleMenuActive} className='hamburguer' />
         </div>

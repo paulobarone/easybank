@@ -19,6 +19,14 @@ export const Paragraph = styled.p`
   font-size: 14px;
   color: var(--GrayishBlue);
   line-height: 1.5em;
+
+  &.footer {
+    text-align: center;
+
+    a {
+      color: var(--White);
+    }
+  }
 `
 
 export const TextGroup = styled.div`

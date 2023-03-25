@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     --DarkBlue: hsl(233, 26%, 24%);
   }
 
-  *{
+  * {
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;

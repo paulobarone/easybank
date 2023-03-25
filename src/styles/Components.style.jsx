@@ -16,6 +16,14 @@ export const Container = styled.div`
     background-color: var(--LightGrayishBlue);
   }
 
+  &.footer {
+    background-color: var(--DarkBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+  }
+
 `
 
 export const Button = styled.button`
@@ -26,4 +34,9 @@ export const Button = styled.button`
   background: linear-gradient(90deg, var(--LimeGreen), var(--BrightCyan));
   color: var(--White);
   font-weight: 500;
+`
+
+export const Li = styled.li`
+  text-align: center;
+  color: white;
 `

@@ -46,8 +46,3 @@ export const Ul = styled.ul`
   background: rgb(0,0,0);
   background: linear-gradient(45deg, var(--LimeGreen) 0%, rgba(0,0,0,0.95) 100%);
 `
-
-export const Li = styled.li`
-  list-style: none;
-  color: white;
-`

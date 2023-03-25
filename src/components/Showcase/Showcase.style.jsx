@@ -15,6 +15,7 @@ export const Bg = styled.div`
 
 export const Img = styled.img`
   width: 100%;
+  max-height: 450px;
   top: -150px;
   z-index: -1;
   position: absolute;

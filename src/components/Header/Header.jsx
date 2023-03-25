@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import { Container, Nav, Ul, Li} from './Header.style';
+import { NavContainer, Nav, Ul, Li} from './Header.style';
 import hamburguer from './icon-hamburger.svg';
 import close from './icon-close.svg';
 import { useEffect, useState } from 'react';
@@ -18,7 +18,7 @@ export default function Header() {
   }, [menuActive]);
 
   return (
-    <Container>
+    <NavContainer>
       <Nav>
         <img src={logo} alt="Easybank Logo" />
         <div className='containerHamburguer'>
@@ -34,6 +34,6 @@ export default function Header() {
           })}
         </Ul>
       </Nav>
-    </Container>
+    </NavContainer>
   ) 
 }

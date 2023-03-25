@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  padding: 16px;
+export const NavContainer = styled.div`
+  padding: 16px 32px;
   background-color: var(--White);
 `
 
@@ -15,10 +15,11 @@ export const Nav = styled.nav`
     align-items: center;
     justify-content: center;
     z-index: 10;
-  }
+  } 
 
   ul.active {
     display: flex;
+    transition: 1s;
   }
 `
 
@@ -40,9 +41,10 @@ export const Ul = styled.ul`
   width: 100%;
   height: 100%;
 
+  backdrop-filter: blur(3px); 
+  opacity: 0.9;
   background: rgb(0,0,0);
   background: linear-gradient(45deg, var(--LimeGreen) 0%, rgba(0,0,0,0.95) 100%);
-  backdrop-filter: blur(3px);
 `
 
 export const Li = styled.li`

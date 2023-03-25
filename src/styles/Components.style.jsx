@@ -2,10 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   padding: 40px;
-  background-color: var(--White);
   
   &.showcase {
     margin-bottom: 50px;
+  }
+
+  &.latestArticlesContainer {
+    padding: 70px 40px;
   }
 
   &.infoContainer {

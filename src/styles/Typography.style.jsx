@@ -2,7 +2,12 @@ import styled from "styled-components"
 
 export const H1 = styled.h1`
   font-size: 32px;
+  text-align: center;
   font-weight: 500;
+
+  &.latestArticlesTitle {
+    margin-bottom: 32px;
+  }
 `
 
 export const H2 = styled.h2`

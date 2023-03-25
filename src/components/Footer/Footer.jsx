@@ -1,5 +1,5 @@
 import { Button, Container, Li } from "../../styles/Components.style";
-import { List, Span } from './Footer.style';
+import { List } from './Footer.style';
 import Logo from "../Logo/Logo";
 import FacebookImg from './icon-facebook.svg';
 import YoutubeImg from './icon-youtube.svg';

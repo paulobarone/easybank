@@ -1,11 +1,13 @@
 import styled from "styled-components";
-import backgroundImageMobile from './bg-intro-mobile.svg'
+import backgroundImageMobile from './bg-intro-mobile.svg';
+import backgroundImageDesktop from './bg-intro-desktop.svg';
 
 export const Bg = styled.div`
   width: 100%;
-  height: 80vw;
+  height: 60vw;
+  max-height: 900px;
   z-index: -1;
-
+  background-position: 0% 80%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,32 +16,34 @@ export const Bg = styled.div`
   background-image: url(${backgroundImageMobile});
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
 
   @media (min-width: 640px) {
-    height: 60vw;
-    background-position: center 80%;
+
+  }
+
+  @media (min-width: 1024px) {
+    background-image: url(${backgroundImageDesktop});
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 1200px;
+    background-position: 0% 80%;
+    margin-top: -150px;
+    width: 900px;
+    height: 900px;
   }
 `
 
 export const Img = styled.img`
-  max-width: 90vw;
   min-height: 10vw;
-
   position: absolute;
-  top: -100px;
+  top: -30vw;
+  height: 90vw;
+  max-height: 90vw;
 
-  @media (min-width: 480px) {
-    top: -150px;
-  }
-
-  @media (min-width: 640px) {
+  @media (min-width: 1024px) {
+    width: 600px;
+    height: auto;
+    top: -20px;
     max-height: 80vw;
   }
-`
-
-export const ImgContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `

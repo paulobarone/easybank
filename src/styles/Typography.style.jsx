@@ -8,6 +8,13 @@ export const H1 = styled.h1`
   &.latestArticlesTitle {
     margin-bottom: 48px;
   }
+
+  &.showcaseTitle {
+    @media (min-width: 1024px) {
+      font-size: 48px;
+      text-align: start;
+    }
+  }
 `
 
 export const H2 = styled.h2`
@@ -27,6 +34,12 @@ export const Paragraph = styled.p`
       color: var(--White);
     }
   }
+
+  &.showcaseDescription {
+    @media (min-width: 1024px) {
+      font-size: 16px;
+    }
+  }
 `
 
 export const TextGroup = styled.div`
@@ -39,5 +52,20 @@ export const TextGroup = styled.div`
 
   &.infoTextGroup {
     margin-bottom: 50px;
+  }
+
+  &.showcaseTextGroup {
+    margin-bottom: 50px;
+    padding: 40px 10%;
+    justify-content: center;
+    max-width: 600px;
+
+    @media (min-width: 1024px) {
+      max-width: 450px;
+      align-items: start;
+      text-align: left;
+      padding: 0;
+      margin: 0;
+    }
   }
 `

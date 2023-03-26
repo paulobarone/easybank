@@ -34,7 +34,7 @@ function Footer() {
   const linkItems = ['About Us', 'Contact', 'Blog', 'Careers', 'Support', 'Privacy Policy'];
 
   return (
-    <Container className="footer">
+    <Container className="footerContainer">
       <Logo white={true} />
       <List>
         {socialMediaItems.map((item, index) => {

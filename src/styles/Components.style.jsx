@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   padding: 40px 10%;
-  
-  &.showcase {
-    margin-bottom: 50px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &.latestArticlesContainer {
     padding: 70px 10%;
@@ -16,7 +15,7 @@ export const Container = styled.div`
     background-color: var(--LightGrayishBlue);
   }
 
-  &.footer {
+  &.footerContainer {
     background-color: var(--DarkBlue);
     display: flex;
     flex-direction: column;
@@ -24,6 +23,20 @@ export const Container = styled.div`
     gap: 36px;
   }
 
+  &.showcaseContainer {
+    padding: 0;
+
+    @media (min-width: 1024px) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      padding: 0 0 0 8%;
+    }
+
+    @media (min-width: 1280px) {
+      padding: 0 4% 0 8%;
+    }
+  }
 `
 
 export const Button = styled.button`
@@ -36,6 +49,10 @@ export const Button = styled.button`
   font-weight: 500;
   cursor: pointer;
   display: none;
+
+  &.showcaseButton {
+    display: block;
+  }
 `
 
 export const Li = styled.li`

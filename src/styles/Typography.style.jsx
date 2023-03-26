@@ -40,6 +40,13 @@ export const Paragraph = styled.p`
       font-size: 16px;
     }
   }
+
+  a {
+    &:hover {
+      transition: 0.5s ease-in-out;
+      color: var(--LimeGreen);
+    }
+  }
 `
 
 export const TextGroup = styled.div`

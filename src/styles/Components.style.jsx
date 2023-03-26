@@ -21,6 +21,30 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 36px;
+
+    @media (min-width: 1024px) {
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 150px;
+    }
+
+    .firstPart {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+
+      @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+      }
+    }
+
+    .columnContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
   }
 
   &.showcaseContainer {
@@ -30,11 +54,11 @@ export const Container = styled.div`
       display: flex;
       justify-content: space-between;
       flex-direction: row-reverse;
-      padding: 0 0 0 8%;
+      padding: 0 0 0 6%;
     }
 
     @media (min-width: 1280px) {
-      padding: 0 4% 0 8%;
+      padding: 0 6% 0 6%;
     }
   }
 `
@@ -53,9 +77,22 @@ export const Button = styled.button`
   &.showcaseButton {
     display: block;
   }
+
+  &.footerButton {
+    @media (min-width: 1024px) {
+      display: block;
+    }
+  }
 `
 
 export const Li = styled.li`
   text-align: center;
   color: white;
+`
+
+export const Link = styled.a`
+  &:hover {
+    transition: 0.5s ease-in-out;
+    color: var(--LimeGreen);
+  }
 `

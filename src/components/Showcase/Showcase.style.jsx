@@ -17,10 +17,6 @@ export const Bg = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media (min-width: 640px) {
-
-  }
-
   @media (min-width: 1024px) {
     background-image: url(${backgroundImageDesktop});
     background-repeat: no-repeat;

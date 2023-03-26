@@ -10,4 +10,8 @@ export const InfoItems = styled.div`
     grid-template-columns: repeat(2, 1fr);
     gap: 48px;
   }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 `

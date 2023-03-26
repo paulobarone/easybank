@@ -48,8 +48,8 @@ function LatestArticles() {
               <img src={item.img} alt={item.title} className='articleImg' />
               <div className="textGroup">
                 <span className='authorName'>By {item.author}</span>
-                <H2>{item.title}</H2>
-                <Paragraph>{item.description}</Paragraph>
+                <H2 className='titleArticle'>{item.title}</H2>
+                <Paragraph className='descriptionArticle'>{item.description}</Paragraph>
               </div>
             </Card>
           )

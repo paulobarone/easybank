@@ -8,7 +8,12 @@ export const CardsContainer = styled.div`
   @media (min-width: 640px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 48px;
+    gap: 5vw;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3vw;
   }
 `
 
@@ -29,11 +34,14 @@ export const Card = styled.div`
 
   img.articleImg {
     width: 100%;
+    min-height: 175px;
+    max-height: 250px;
+    height: 40vw;
     border-radius: 10px 10px 0 0;
   }
 
   div.textGroup {
-    padding: 32px;
+    padding: 3vw;
     display: flex;
     flex-direction: column;
     gap: 8px;

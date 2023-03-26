@@ -43,7 +43,7 @@ function Info() {
       <InfoItems>
         {infoDb.map((item, index) => {
           return (
-            <TextGroup key={index}>
+            <TextGroup className='infoItemTextGroup' key={index}>
               <img src={item.img} alt={item.title} />
               <H2>{item.title}</H2>
               <Paragraph>{item.description}</Paragraph>

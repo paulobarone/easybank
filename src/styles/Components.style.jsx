@@ -1,17 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 40px 10%;
+  padding: 40px 6%;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   &.latestArticlesContainer {
-    padding: 70px 10%;
+    padding: 70px 6%;
   }
 
   &.infoContainer {
-    padding: 70px 10%;
+    padding: 70px 6%;
     background-color: var(--LightGrayishBlue);
   }
 

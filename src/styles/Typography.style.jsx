@@ -18,12 +18,12 @@ export const H1 = styled.h1`
 `
 
 export const H2 = styled.h2`
-  font-size: 18px;
+  font-size: 1.0625rem;
   font-weight: 400;
 `
 
 export const Paragraph = styled.p`
-  font-size: 14px;
+  font-size: 0.825rem;
   color: var(--GrayishBlue);
   line-height: 1.5em;
 
@@ -52,6 +52,14 @@ export const TextGroup = styled.div`
 
   &.infoTextGroup {
     margin-bottom: 50px;
+
+    @media (min-width: 1024px) {
+      max-width: 450px;
+    }
+  }
+
+  &.infoItemTextGroup {
+    max-width: 350px;
   }
 
   &.showcaseTextGroup {
@@ -61,7 +69,7 @@ export const TextGroup = styled.div`
     max-width: 600px;
 
     @media (min-width: 1024px) {
-      max-width: 450px;
+      max-width: 400px;
       align-items: start;
       text-align: left;
       padding: 0;

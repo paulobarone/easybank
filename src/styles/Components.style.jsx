@@ -99,8 +99,13 @@ export const Button = styled.button`
 
 export const Li = styled.li`
   text-align: center;
-  color: white;
+  color: var(--DarkBlue);
   cursor: pointer;
+  font-size: 18px;
+
+  @media (min-width: 1024px) {
+    font-size: 16px;
+  }
 `
 
 export const Link = styled.a`

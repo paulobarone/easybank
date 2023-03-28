@@ -20,8 +20,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
 
-  body, button {  
-    overflow-x: hidden; 
+  body, button {
     font-size: 18px;
     font-family: 'Public Sans', sans-serif;
     background-color: var(--VeryLightGray);

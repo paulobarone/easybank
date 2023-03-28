@@ -1,13 +1,29 @@
 import styled from 'styled-components';
 
+export const Overlay = styled.div`
+  &.active {
+    position: absolute;
+    top: 52px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, var(--DarkBlue) 0%, transparent 100%);
+    transition: 1s;
+  }
+`
+
 export const Nav = styled.nav`
   background-color: var(--White);
   padding: 16px 12%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-
+  z-index: 30;
 
   @media (min-width: 1024px) {
     .hamburguer {
@@ -21,18 +37,34 @@ export const Nav = styled.nav`
 `
 
 export const Ul = styled.ul`
+  padding: 30px 0;
   margin: 0;
-  padding: 0;
-  display: flex;
+  border-radius: 5px;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  
+  gap: 16px;
+  background-color: var(--White);
+  width: 80vw;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &.active {
+    display: flex;
+  }
+
   @media (min-width: 1024px) {
+    width: auto;
+    padding: 0;
+    position: static;
+    background-color: transparent;
+    display: flex;
     flex-direction: row;
     gap: 24px;
-    font-size: 16px;
+    transform: none;
 
     Li {
       color: var(--GrayishBlue);
@@ -57,40 +89,13 @@ export const Ul = styled.ul`
   }
 `
 
-export const NavItemsContainer = styled.div`
-  display: none;
-
-  &.NavItemsContainerActive {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 5;
-
-    width: 100vw;
-    height: 100vh;
-    backdrop-filter: blur(3px); 
-    opacity: 0.9;
-    background: rgb(0,0,0);
-    background: linear-gradient(45deg, var(--LimeGreen) 0%, rgba(0,0,0,0.95) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  @media (min-width: 1024px) {
-    display: block;
-  }
-`
-
 export const Menu = styled.img`
   z-index: 5;
   width: 24px;
   cursor: pointer;
 
   &.close {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
   }
 `

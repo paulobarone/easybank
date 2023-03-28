@@ -20,6 +20,11 @@ export const H1 = styled.h1`
 export const H2 = styled.h2`
   font-size: 1.0625rem;
   font-weight: 400;
+  transition: 0.5s ease-in-out;
+
+  &.titleArticle:hover {
+    color: var(--LimeGreen);
+  }
 `
 
 export const Paragraph = styled.p`

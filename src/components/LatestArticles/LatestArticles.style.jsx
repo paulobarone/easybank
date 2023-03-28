@@ -25,12 +25,6 @@ export const Card = styled.div`
   -moz-box-shadow: 0px 4px 9px 0px rgba(0,0,0,0.25);
   box-shadow: 0px 4px 9px 0px rgba(0,0,0,0.25);
   cursor: pointer;
-  transition-timing-function: linear;
-  transition: 0.5s;
-
-  &:hover {
-    transform: scale(1.02);
-  }
 
   img.articleImg {
     width: 100%;

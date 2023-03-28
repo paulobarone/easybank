@@ -34,9 +34,13 @@ export const Container = styled.div`
       gap: 36px;
 
       @media (min-width: 1024px) {
+        .columnContainer {
+          justify-content: center;
+        }
+
         display: flex;
         flex-direction: row;
-        gap: 150px;
+        gap: 10vw;
       }
     }
 
@@ -64,6 +68,7 @@ export const Container = styled.div`
 `
 
 export const Button = styled.button`
+  min-width: 200px;
   padding: 12px 32px;
   border-radius: 32px;
   outline: none;
@@ -73,6 +78,13 @@ export const Button = styled.button`
   font-weight: 500;
   cursor: pointer;
   display: none;
+  transition-timing-function: linear;
+  transition: 0.5s;
+
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   &.showcaseButton {
     display: block;
@@ -88,11 +100,12 @@ export const Button = styled.button`
 export const Li = styled.li`
   text-align: center;
   color: white;
+  cursor: pointer;
 `
 
 export const Link = styled.a`
+  transition: 0.5s ease-in-out;
   &:hover {
-    transition: 0.5s ease-in-out;
     color: var(--LimeGreen);
   }
 `

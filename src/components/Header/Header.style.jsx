@@ -1,31 +1,60 @@
 import styled from 'styled-components';
 
-export const NavContainer = styled.div`
-  padding: 16px 32px;
-  background-color: var(--White);
-  z-index: 2;
-  position: sticky;
-`
-
 export const Nav = styled.nav`
+  background-color: var(--White);
+  padding: 16px 12%;
   display: flex;
   justify-content: space-between;
-  height: 20px;
+  align-items: center;
+  position: relative;
 
-  ul.active {
-    display: flex;
-    transition: 1s;
+
+  @media (min-width: 1024px) {
+    .hamburguer {
+      display: none;
+    }
+
+    .headerButton {
+      display: block;
+    }
   }
 `
 
 export const Ul = styled.ul`
-  display: none;
   margin: 0;
   padding: 0;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    gap: 24px;
+    font-size: 16px;
+
+    Li {
+      color: var(--GrayishBlue);
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -28px;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, var(--LimeGreen), var(--BrightCyan));
+        display: block;
+        opacity: 0;
+        transition: 0.5s;
+      }
+      
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+  }
 `
 
 export const NavItemsContainer = styled.div`
@@ -49,11 +78,16 @@ export const NavItemsContainer = styled.div`
     align-items: center;
     justify-content: center;
   }
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
 `
 
 export const Menu = styled.img`
   z-index: 5;
   width: 24px;
+  cursor: pointer;
 
   &.close {
     width: 24px;

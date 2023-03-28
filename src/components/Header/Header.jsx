@@ -1,4 +1,4 @@
-import { NavContainer, Nav, Ul, NavItemsContainer, Menu } from './Header.style';
+import { Nav, Ul, NavItemsContainer, Menu } from './Header.style';
 import hamburguer from './icon-hamburger.svg';
 import close from './icon-close.svg';
 import { useEffect, useState } from 'react';
@@ -19,21 +19,19 @@ export default function Header() {
   }, [menuActive]);
 
   return (
-    <NavContainer>
-      <Nav>
-        <Logo white={false} />
-        <NavItemsContainer className={menuActive ? 'NavItemsContainerActive' : 'NavItemsContainer'}>
-          <Ul className={menuActive ? 'active' : 'list'}>
-            {navBarItems.map((item, key) => {
-              return (
-                <Li onClick={toggleMenuActive} key={key} className='navBarItem'>{item}</Li>
-              )
-            })}
-          </Ul>
-        </NavItemsContainer>
-        <Menu src={menuActive ? close : hamburguer} alt="Menu" onClick={toggleMenuActive} className={menuActive ? 'close hamburguer' : 'hamburguer'} />
-        <Button className='headerButton'>Request Invite</Button>
-      </Nav>
-    </NavContainer>
+    <Nav>
+      <Logo white={false} />
+      <NavItemsContainer className={menuActive ? 'NavItemsContainerActive' : 'NavItemsContainer'}>
+        <Ul className={menuActive ? 'active' : 'list'}>
+          {navBarItems.map((item, key) => {
+            return (
+              <Li key={key} className='navBarItem'>{item}</Li>
+            )
+          })}
+        </Ul>
+      </NavItemsContainer>
+      <Menu src={menuActive ? close : hamburguer} alt="Menu" onClick={toggleMenuActive} className={menuActive ? 'close hamburguer' : 'hamburguer'} />
+      <Button className='headerButton'>Request Invite</Button>
+    </Nav>
   ) 
 }

@@ -7,7 +7,6 @@ export const ListLinksContainer = styled.div`
 
   @media (min-width: 1024px) {
     flex-direction: row;
-    gap: 150px;
   }
 `
 
@@ -18,6 +17,7 @@ export const List = styled.ul`
 
   @media (min-width: 1024px) {
     align-items: start;
+    min-width: 120px;
   }
 
   &.col {
@@ -29,13 +29,13 @@ export const List = styled.ul`
     color: var(--White);
   }
 
-  a:hover {
-    transition: 0.5s ease-in-out;
-    color: var(--LimeGreen);
-  }
-  
-  .socialMediaImg:hover svg path {
-    transition: 0.5s ease-in-out;
-    fill: var(--LimeGreen);
+  .socialMediaImg {
+    svg path {
+      transition: fill 0.5s ease-in-out;
+    }
+
+    &:hover svg path {
+      fill: var(--LimeGreen);
+    }
   }
 `

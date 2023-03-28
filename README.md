@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://imgur.com/a/rKgKUcQ)
+<img src="https://user-images.githubusercontent.com/98724682/228270621-4dacb87d-9aee-4ee8-8e4e-b27ab6f2c38d.jpg" alt="Preview" />
 
 ### Links
 

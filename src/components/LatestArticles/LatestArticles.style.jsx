@@ -35,7 +35,7 @@ export const Card = styled.div`
   }
 
   div.textGroup {
-    padding: 3vw;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 8px;
